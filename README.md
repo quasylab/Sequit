@@ -38,8 +38,8 @@ After opening the tool, the steps to work with ***Sequit*** are the same for eve
    1. Choose between a 2D or 3D environment
    2. Select the folder path from your computer where the traces are saved
    3. Choose the prefab plane
-   4. Press "Generate Agents"
-5. Use the WASD/Arrow Keys to navigate
-6. Use the Mouse Wheel or the Camera buttons (+ and -) to get closer or move away
+   4. Press `Generate Agents`
+5. Use the `WASD`/`Arrow Keys` to navigate
+6. Use the `Mouse Wheel` or the Camera buttons (+ and -) to get closer or move away
 7. Use the central Camera button to change camera type.
-8. Use the Spacebar or the Play button to stop/resume the visualisation
+8. Use the `Spacebar` or the Play button to stop/resume the visualisation
