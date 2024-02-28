@@ -35,6 +35,7 @@ public class ButtonManager : MonoBehaviour
         titleCanva.gameObject.SetActive(false);
         _gameManager.isGameActive = true;
         _gameManager.actionMenu.SetActive(true);
+        _gameManager.inputCanva.SetActive(true);
     }
     
     public void QuitApplication()

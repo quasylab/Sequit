@@ -34,14 +34,7 @@ public class SimulationManager : MonoBehaviour
     {
     }
 
-    public void StupidButton()
-    {
-        string appDirectory = Application.persistentDataPath;
-        text.gameObject.SetActive(true);
-        text.text = appDirectory;
-        text.color = Color.red;
-        Debug.Log(appDirectory);
-    }
+    
     
     /// <summary>
     /// This method is called by the Button Manager to generate agents

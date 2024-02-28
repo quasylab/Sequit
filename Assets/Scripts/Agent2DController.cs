@@ -14,9 +14,11 @@ public class Agent2DController : MonoBehaviour, IAgentController
 
     private Vector3 _initialPos;
     private Vector3 _initialRot;
+    private Vector3 _posOffset = new Vector3(0,-90,0);
     
     public string sourceFilePath;
     public Sprite[] shapes;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +30,7 @@ public class Agent2DController : MonoBehaviour, IAgentController
         _prevTime = Time.fixedTime;
         Step firstStep = _controller.GetNext();
         transform.position = _initialPos + firstStep.Position;
-        transform.rotation = Quaternion.Euler(_initialRot+firstStep.Rotation);
+        transform.rotation = Quaternion.Euler(_initialRot-firstStep.Rotation);
         ChangeShape(firstStep.Shape);
         ChangeColor(firstStep.Color);
         
@@ -58,6 +60,7 @@ public class Agent2DController : MonoBehaviour, IAgentController
             case "circle": spriteRenderer.sprite = shapes[1]; break;
             case "triangle": spriteRenderer.sprite = shapes[2]; break;
             case "bird": spriteRenderer.sprite = shapes[3]; break;
+            case "ant": spriteRenderer.sprite = shapes[4]; break;
             default: spriteRenderer.sprite = shapes[0]; break;
         }
     }
@@ -73,7 +76,12 @@ public class Agent2DController : MonoBehaviour, IAgentController
             case "green": spriteRenderer.color = UnityEngine.Color.green; break;
             case "yellow": spriteRenderer.color = UnityEngine.Color.yellow; break;
             case "red": spriteRenderer.color = UnityEngine.Color.red; break;
-            default: spriteRenderer.color = UnityEngine.Color.red; break;
+            case "cyan": spriteRenderer.color = UnityEngine.Color.cyan; break;
+            case "black": spriteRenderer.color = UnityEngine.Color.black; break;
+            case "gray": spriteRenderer.color = UnityEngine.Color.gray; break;
+            case "magenta": spriteRenderer.color = UnityEngine.Color.magenta; break;
+            case "white": spriteRenderer.color = UnityEngine.Color.white; break;
+            default: spriteRenderer.color = UnityEngine.Color.white; break;
         }
     }
 
@@ -87,7 +95,7 @@ public class Agent2DController : MonoBehaviour, IAgentController
 
         _target = _initialPos + nextStep.Position;
         _rigidbody.velocity = (_target - transform.position) / _controller.DeltaTime;
-        transform.rotation = Quaternion.Euler(_initialRot+nextStep.Rotation);
+        transform.rotation = Quaternion.Euler(_initialRot-nextStep.Rotation);
         ChangeShape(nextStep.Shape);
         ChangeColor(nextStep.Color);
         _prevTime = Time.fixedTime;
