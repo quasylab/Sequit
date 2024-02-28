@@ -2,8 +2,8 @@
 ## A lightweight visualiser for agent traces
 
 [![License](https://img.shields.io/github/license/quasylab/Sequit)](/LICENSE)
-[![GitHub contributors](https://img.shields.io/github/contributors/quasylab/Sequit)](https://github.com/quasylab/sibilla/graphs/contributors)
-[![GitHub forks](https://img.shields.io/github/forks/quasylab/Sequit?style=social)](https://github.com/quasylab/sibilla/fork)
+[![GitHub contributors](https://img.shields.io/github/contributors/quasylab/Sequit)](https://github.com/quasylab/Sequit/graphs/contributors)
+[![GitHub forks](https://img.shields.io/github/forks/quasylab/Sequit?style=social)](https://github.com/quasylab/Sequit/fork)
 [![Made with Unity](https://img.shields.io/badge/Made%20with-Unity-57b9d3?style=flat&logo=unity)](https://unity3d.com)
 [![Unity 2022.3.14f1](https://img.shields.io/badge/Unity-2022.3.14f1-57b9d3?style=flat&logo=unity)](https://docs.unity3d.com/Manual/index.html)
 
@@ -30,6 +30,12 @@ Currently, ***Sequit*** support the following features:
 
 The standalone build versions are available at the following [LINK](http://quasylab.unicam.it/sibilla/sequit/).
 
+After unzipping the chosen folder, it is necessary to execute the right file to open the tool:
+
+- **macOS**: Click on the icon with the *QuaSyLab* logo.
+- **Windows**: Click on the file `Sequit.exe`.
+- **Linux**: In a terminal, navigate into the distribution folder and type `./Sequit_DistLinux.x86_64`.
+
 After opening the tool, the steps to work with ***Sequit*** are the same for every version.
 
 1. Press the `Start` button
@@ -43,3 +49,5 @@ After opening the tool, the steps to work with ***Sequit*** are the same for eve
 6. Use the `Mouse Wheel` or the Camera buttons (+ and -) to get closer or move away
 7. Use the central Camera button to change camera type.
 8. Use the `Spacebar` or the Play button to stop/resume the visualisation
+
+If you need help with the available shortcut commands, press `H`.
