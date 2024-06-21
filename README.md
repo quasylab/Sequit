@@ -51,3 +51,26 @@ After opening the tool, the steps to work with ***Sequit*** are the same for eve
 8. Use the `Spacebar` or the Play button to stop/resume the visualisation
 
 If you need help with the available shortcut commands, press `H`.
+
+# Citing Sequit
+If you want to cite Sequit in your paper, you can use the following .bibtex:
+```
+@inproceedings{Sequit2024,
+  author       = {Nicola Del Giudice and
+                  Federico Maria Cruciani and
+                  Michele Loreti},
+  editor       = {Ilaria Castellani and
+                  Francesco Tiezzi},
+  title        = {Visualisation of Collective Systems with Sequit and Sibilla},
+  booktitle    = {Coordination Models and Languages - 26th {IFIP} {WG} 6.1 International
+                  Conference, {COORDINATION} 2024, Held as Part of the 19th International
+                  Federated Conference on Distributed Computing Techniques, DisCoTec
+                  2024, Groningen, The Netherlands, June 17-21, 2024, Proceedings},
+  series       = {Lecture Notes in Computer Science},
+  volume       = {14676},
+  pages        = {277--294},
+  publisher    = {Springer},
+  year         = {2024},
+  doi          = {10.1007/978-3-031-62697-5\_15}
+}
+```
